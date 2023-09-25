@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"/>
+    <title>랜덤 뽑기</title>
+</head>
+<body>
+    <div class="random-wrap">
+        <div class="random-circle">
+            <span class="random-circle-text">?</span>
+        </div>
+        <div class="random-button-wrap">
+            <button class="random-start random-button">
+                <i class="fa-solid fa-shuffle"></i>
+                <span>추첨</span>
+            </button>
+            <button class="random-edit random-button">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <span>수정(E)</span>
+            </button>
+        </div>
+    </div>
+    <div class="random-edit-box-wrap">
+        <div class="random-edit-box">
+            <input type="text" placeholder="추첨할 사람 이름 (Enter 키로 입력)" class="random-edit-box-nickname">
+            <span style="color: white;">ESC 키로 창 닫기 / * 새로고침 시 모든 정보가 삭제됩니다.</span>
+            <table class="customTable">
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>닉네임</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
